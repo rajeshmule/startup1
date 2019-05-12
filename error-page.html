@@ -2,24 +2,140 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="UTF-8">
-    <title>404</title>
-    <link rel="stylesheet" href="assets/stylesheets/reset.css">
-    <link rel="stylesheet" href="assets/stylesheets/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>404</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/stylesheets/reset.css">
+        <link rel="stylesheet" href="assets/stylesheets/style.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
 
-<body>
-    <div class="error-page">
-        <div class="home"><a href="index.html" class="home-page">Home / 404 Error Page</a></div> 
+    <body>
+        <header class="primary-header" id="primary-header">
+                <div class="logo">
+                    <i class="fab fa-linode logo-icon"></i>
+                    <h1 class="logo-title">Startup</h1>
+                </div>
+                <div class="nav-container">
+                    <div class="menu">
+                        <label for="toggle-menu" class="menu-btn">Menu</label>
+                        <input type="checkbox"  id="toggle-menu" name="toggle-menu" class="toggle-menu" hidden>  
+                    
+                    <ul class="nav-list">
+                        
+                        <li class="list-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="about-us.html" class="nav-link">About US</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="pricing.html" class="nav-link">Pricing</a>
+                        </li>
+                        <li class="drop-down">
+                            
+                            <label for="toggle-drop" class="nav-link">Dropdown  <i class="fa fa-angle-down"></i></label>
+                            <input type="checkbox"  id="toggle-drop" name="toggle-drop" class="toggle-drop" hidden>
+                        
+                            <ul class="dropdown-list">
+                                <li class="dropdown-item list-item">
+                                    <a href="index.html" class="dropdown-link nav-link">Services</a>
+                                </li>
+                                <li class="dropdown-item list-item">
+                                    <a href="faqs.html" class="dropdown-link nav-link">Faq's</a>
+                                </li>
+                                <li class="dropdown-item list-item">
+                                    <a href="error-page.html" class="dropdown-link nav-link">404</a>
+                                </li>
+                                <li class="dropdown-item list-item">
+                                    <a onclick="window.location.href='#statistics';" class="dropdown-link nav-link">Statistics</a>
+                                </li>
+                                <li class="dropdown-item list-item">
+                                    <a href="about-us.html" class="dropdown-link nav-link">Why Choose Us?</a>
+                                </li>
+                                <li class="dropdown-item list-item">
+                                    <a href="about-us.html" class="dropdown-link nav-link">Our Team</a>
+                                </li>
+                                <li class="dropdown-item list-item">
+                                    <a href="index.html#partners" class="dropdown-link nav-link">Partners</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-item">
+                            <a href="contact.html" class="nav-link">Contact Us</a>
+                        </li>
+                    </div>
+                    </ul>
+                </div>
+                <div class="search-container">
+                    <form action="#"class="search-form">
+                        <input type="text" placeholder="Search Here..." class="search"><!--
+                        --><button type="submit" class=" search-btn btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    <button class="cloud-btn btn">
+                        <i class="fas fa-cloud-download-alt"></i>
+                    </button>   
+                </div>
+        </header>
         
-        <div class="image"><img src="assets/media/images/Error.png"></div>
-        
-        <div class="heading"><h2>Ooops! This Page Can't Be Found.</h2></div>
-        
-        <div class="para"><p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br> veniam, quis nostrud exercitation</p></div>
-        
-        <button class="btn">Back To Home</button>
-    </div>
-</body>
+        <div class="error-page">
+            <div class="home"><a href="index.html" class="home-page">Home / 404 Error Page</a></div> 
+            
+            <div class="image"><img src="assets/media/images/error.png"></div>
+            
+            <div class="heading"><h2>Ooops! This Page Can't Be Found.</h2></div>
+            
+            <div class="para"><p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br> veniam, quis nostrud exercitation</p></div>
+            
+            <button class="btn">Back To Home</button>
+        </div>
+        <!-- Communication Section -->
+        <section id="comm">
+                <div class="comm-container">
+            
+                <div class="icon">
+                <span class="fa fa-envelope"></span>
+                </div>
+            
+                <h2>Stay Updated!</h2>
+            
+                <p class="subtitle-p">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+            
+                <form class="sub-form">
+                <div class="sub-box">
+            
+                <input type="email" placeholder="Enter your email.." required>
+                <button type="submit" name="button">Subscribe</button>
+            
+                </div>
+            
+                </form>
+                </div>
+            </section>
+                <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-container">
+            
+                <div class="social-icons">
+                <ul>
+                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                    <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+                </ul>
+                </div>
+                <p>&copy; 2019 Startup. All Rights Reserved</p>
+            
+                <div class="top">
+                    <a href="#hero"><span class="fa fa-level-up"></span></a>
+                </div>
+                </div>
+            
+            </footer>
+    </body>
 </html>

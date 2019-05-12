@@ -42,8 +42,8 @@ p {
 .btn:hover {
   opacity: 0.8;
 }
-
-.span {
+/* needs to change class name */
+.damn-span {
   font-size: 1rem;
   font-weight: 700;
 }
@@ -547,7 +547,8 @@ h6 {
 .partenrs-header {
     text-align: center;
     width: 80%;
-    margin: 0 0 5rem auto;
+    margin: 0  auto;
+    margin-bottom: 5rem;
 }
 .services-title {
     line-height: 1;
@@ -776,11 +777,11 @@ h6 {
     list-style-type: none;
 
 }
-
+/* Need to change this class name */
 .damn-btn {
     width: 200px;
     height: 80px;
-border: 1px solid black;
+    border: 1px solid black;
 }
 
 /*About us*/
@@ -880,8 +881,8 @@ color: #00a3e2;
 .fa-eye {
  color: #b764d8;
 }
-
-.fa-lightbulb {
+/* Needs to change the class name */
+.damn-fa-lightbulb {
 	color: #0ca799;
 }
 
@@ -890,7 +891,8 @@ color: #00a3e2;
 	font-size: 1.5rem;
 }
 
-.btn {
+/* needs to change the name */
+.damn-btn {
 	margin-top: 2rem;
 }
 
