@@ -782,3 +782,261 @@ h6 {
     height: 80px;
 border: 1px solid black;
 }
+
+/*About us*/
+
+
+.banner{
+	display:flex;
+	justify-content: center;
+	padding: 5rem 0;
+
+}
+
+.about {
+	background: url(../media/images/about.png);
+	max-width: 100%;
+	height: auto;
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	
+}
+
+.hero {
+	display:grid;
+	grid-template-columns: 40% 60%;
+	grid-auto-rows: 30rem;
+	padding-bottom: 3rem;
+
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-right: 2rem;
+}
+ 
+.color {
+	color: var(--green);
+
+}
+ .para {
+ 	padding-top: 1.5rem;
+	line-height: 1.6;
+	color: gray;
+
+ }
+
+ .main_heading {
+ 	font-size: 2.5rem;
+ 	padding-top: 1.5rem;
+ }
+
+
+
+
+ /* benefit page*/
+
+.benefits_items {
+	display: grid;
+	grid-template-columns: 0.5fr 1fr;
+
+}
+
+.benefits {
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 4rem 0 4rem 0;
+	grid-gap: 4.5rem 4.5rem;
+
+}
+.benefits_bg {
+	background-color: var(--grey);
+
+}
+.icon {
+	font-size: 2.5rem;
+	padding-top: 2rem;
+}
+
+.fa-handshake {
+	color: #39dcb1;
+}
+.fa-headphones {
+
+
+color: #00a3e2;
+}
+.fa-folder-open {
+	color:#e53b2c; 
+}
+
+.fa-coffee {
+	color: #feb155;
+}
+
+.fa-eye {
+ color: #b764d8;
+}
+
+.fa-lightbulb {
+	color: #0ca799;
+}
+
+
+.title{
+	font-size: 1.5rem;
+}
+
+.btn {
+	margin-top: 2rem;
+}
+
+/*team*/
+.team_bg {
+	background-color: #F8F9FA;	
+}
+.team {
+	text-align: center;
+	height: 35rem;
+	
+}
+.team_para {
+	line-height: 1.7;
+	color: gray;
+	max-width: 80rem;
+	padding: 2rem 10rem 0 10rem;
+	letter-spacing: 0.1rem;
+}
+
+.team_member {
+	
+	background-color: #FFFFFF;
+	box-shadow: 0.2rem 0.2rem  1rem #ccc;
+}
+
+.team_members {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 3rem;
+	padding-top: 5rem;
+
+}
+
+.flex_social {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 2rem;
+
+
+}
+
+.flex_item {
+	padding: 0 0.8rem 0 0.8rem;
+	color: #333333;
+}
+
+.member_name {
+	font-weight: 700;
+	font-size: 1.2rem;
+	color: #333333;
+	padding-bottom: 1rem;
+}
+ 
+.img {
+	padding: 2rem 0 1rem 0;
+	border-radius: 50%;
+}
+
+.team_title {
+	padding-top: 3rem;
+}	
+
+
+
+
+/*faq's page*/
+
+
+
+.faq {
+	background: url(../media/images/faq.png);
+	max-width: 100%;
+	height: auto;
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.faq_hero {
+	display:grid;
+	grid-template-columns: 50% 50%;
+	grid-auto-rows: 30rem;
+	padding-bottom: 3rem;
+	grid-gap: 2rem;
+
+}
+
+.feq_heading {
+	font-size: 1rem;
+ 	padding-top: 1.5rem;
+}
+
+.faq_list {
+	padding-bottom: 5rem;
+	
+}
+
+.faq_que {
+	max-width: 100%;
+	
+	margin: auto;
+	background-color: #F3F3F3;
+	margin-bottom: 2rem;
+}
+
+.faq_check {
+	display: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox] ~ label {
+	
+	background-color: #F3F3F3;
+	padding: 1.5rem;
+	display: block;
+	letter-spacing: 1px;
+
+}
+
+#check:checked ~ .faq_check {
+	display: block;
+}
+
+.faq_check {
+	background-color: #FFFFFF;
+	width: 100%;
+	padding: 2rem;
+	box-shadow: 0.2rem 0.2rem  1rem #ccc;
+	letter-spacing: 1px;
+}
+.faq_check_title {
+	color: #7066D8;
+	font-size: 1.2rem;
+}
+
+#check_1:checked ~ .fc1 {
+	display: block;
+}
+
+#check_2:checked ~ .fc2{
+	display: block;
+}
+
+#check_3:checked ~ .fc3{
+	display: block;
+}
