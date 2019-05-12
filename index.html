@@ -1,55 +1,326 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Startup Website</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <!-- Communication Section -->
-  <section id="comm">
-    <div class="comm-container">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Startup Home</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/stylesheets/reset.css">
+        <link rel="stylesheet" href="assets/stylesheets/style.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header class="primary-header">
+            <div class="logo">
+                <i class="fab fa-linode logo-icon"></i>
+                <h1 class="logo-title">Startup</h1>
+            </div>
+            <div class="nav-container">
+                <div class="menu">
+                   <label for="toggle-menu" class="menu-btn">Menu</label>
+                    <input type="checkbox"  id="toggle-menu" name="toggle-menu" class="toggle-menu" hidden>  
+                
+                <ul class="nav-list">
+                    
+                    <li class="list-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="about-us.html" class="nav-link">About US</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="pricing.html" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="drop-down">
+                        
+                        <label for="toggle-drop" class="nav-link">Dropdown  <i class="fa fa-angle-down"></i></label>
+                        <input type="checkbox"  id="toggle-drop" name="toggle-drop" class="toggle-drop" hidden>
+                    
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item list-item">
+                                <a href="index.html" class="dropdown-link nav-link">Services</a>
+                            </li>
+                            <li class="dropdown-item list-item">
+                                <a href="faqs.html" class="dropdown-link nav-link">Faq's</a>
+                            </li>
+                            <li class="dropdown-item list-item">
+                                <a href="error-page.html" class="dropdown-link nav-link">404</a>
+                            </li>
+                            <li class="dropdown-item list-item">
+                                <a onclick="window.location.href='#statistics';" class="dropdown-link nav-link">Statistics</a>
+                            </li>
+                            <li class="dropdown-item list-item">
+                                <a href="about-us.html" class="dropdown-link nav-link">Why Choose Us?</a>
+                            </li>
+                            <li class="dropdown-item list-item">
+                                <a href="about-us.html" class="dropdown-link nav-link">Our Team</a>
+                            </li>
+                            <li class="dropdown-item list-item">
+                                <a href="index.html#partners" class="dropdown-link nav-link">Partners</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-item">
+                        <a href="contact.html" class="nav-link">Contact Us</a>
+                    </li>
+                </div>
+                </ul>
+            </div>
+            <div class="search-container">
+                <form action="#"class="search-form">
+                    <input type="text" placeholder="Search Here..." class="search"><!--
+                    --><button type="submit" class=" search-btn btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <button class="cloud-btn btn">
+                    <i class="fas fa-cloud-download-alt"></i>
+                </button>   
+            </div>
+        </header>
+        <section class="hero">
+            <div class="outer-wrapper">
+                <div class="col-2">
+                    <div class="col-2-text">
+                        <h2 class="hero-title">Business <br><span class="green-text">Startup</span></h2>
+                        <p class="article-text hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur facere doloribus fugiat minima doloremque dicta molestiae autem optio nostrum! Error, aspernatur.</p>
+                        <button class="btn">Read More</button>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/media/images/banner.png" alt="comic image of a person sitting in his desk and working with his computer" class="responsive-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features">
+            <div class="outer-wrapper">
+                <div class="articles">
+                    <article class=" article feature">
+                        <div class="article-image-container">
+                            <img src="assets/media/images/img1.png" alt="tornado cfl bulb" class="responsive-img article-img">
+                        </div>
+                        <div class="article-contents">
+                            <h2 class="article-title">Dolor Sit</h2>
+                            <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident praesentium quibusdam repellendus perferendis sed!</p>
+                            <button class="feature-btn">Read More</button>
+                        </div>
+                    </article>
+                    <article class=" article feature">
+                        <div class="article-image-container">
+                            <img src="assets/media/images/img2.png" alt="tornado cfl bulb" class="responsive-img article-img">
+                        </div>
+                        <div class="article-contents">
+                            <h2 class="article-title">Dolor Sit</h2>
+                            <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident praesentium quibusdam repellendus perferendis sed!</p>
+                            <button class="feature-btn">Read More</button>
+                        </div>
+                    </article>
+                    <article class=" article feature">
+                        <div class="article-image-container">
+                            <img src="assets/media/images/img3.png" alt="tornado cfl bulb" class="responsive-img article-img">
+                        </div>
+                        <div class="article-contents">
+                            <h2 class="article-title">Dolor Sit</h2>
+                            <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident praesentium quibusdam repellendus perferendis sed!</p>
+                            <button class="feature-btn">Read More</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <div class="icon">
-      <span class="fa fa-envelope"></span>
-    </div>
+        <section class="exp">
+            <div class="outer-wrapper">
+                <div class="col-2">
+                    <div class="col-2-text exp-article">
+                            <h1 class="exp-title green-text">Business Consultancy</h1>
+                            <h2 class="exp-sub-title">25 Years of Industry  <br>Experience</h2>
+                            <p class="article-text exp-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur facere doloribus fugiat minima doloremque dicta molestiae autem optio nostrum! Error, aspernatur.</p>
+                            <ul class="exp-list">
+                                <li class="exp-item">Marketing Base</li>
+                                <li class="exp-item">Financial Consulting</li>
+                                <li class="exp-item" >Investment Advice</li>
+                                <li class="exp-item">Business Growth</li>
+                                <li class="exp-item">Technical Support</li>
+                            </ul>
+                            <button class="btn">Read More</button>
+                    </div>
+                    <div class="img-container">
+                        <img src="assets/media/images/b1.png" alt="comic image of a person sitting in his desk and working with his computer" class="responsive-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="services">
+            <div class="outer-wrapper">
 
-    <h2>Stay Updated!</h2>
+                    <header class="services-header">
+                        <h2 class="hero-title services-title">Our Services</h2>
+                        <p class="services-subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, soluta cupiditate quae illum vel ducimus iusto ipsa? Blanditiis.</p>
+                    </header>
+                    <div class="articles service-container">
+                        <article class=" article service">
+                            <div class="article-icon chart-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="article-contents">
+                                <h2 class="article-title">Dolor Sit</h2>
+                                <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident praesentium quibusdam repellendus perferendis sed!</p>
+                            </div>
+                        </article>
+                        <article class=" article service">
+                            <div class="article-icon dollar-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="article-contents">
+                                <h2 class="article-title">Dolor Sit</h2>
+                                <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident praesentium quibusdam repellendus perferendis sed!</p>
+                            </div>
+                        </article>
+                        <article class=" article service">
+                            <div class="article-icon bulb-icon">
+                                <i class="far fa-lightbulb"></i>
+                            </div>
+                            <div class="article-contents">
+                                <h2 class="article-title">Dolor Sit</h2>
+                                <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus provident praesentium quibusdam repellendus perferendis sed!</p>
+                            </div>
+                        </article>     
+                    </div>
+            </div>
+        </section>
+        
+        <section class="facts" id="statistics" >
+            <div class="outer-wrapper">
+                <div class="col-2">
+                    <div class="img-container">
+                        <img src="assets/media/images/b2.png" alt="comic image of a person sitting in his desk and working with his computer" class="responsive-img">
+                    </div>
+                    <div class="col-2-text facts-article">
+                        
+                        <h2 class="fact-title">Some of Company Real Facts</h2>
+                        <h3 class="fact-subtitle">Excepteur sint occaecat cupidatat <br>non proident.</h3>
+                        <p class="article-text exp-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur facere doloribus fugiat.</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <h3 class="stat-number">1000+</h3>
+                                <p class="stat-sevice">Lorem, ipsum.
+                                </p>
+                            </div>
+                            <div class="stat">
+                                <h3 class="stat-number">1000+</h3>
+                                <p class="stat-sevice">Lorem, ipsum.
+                                </p>
+                            </div>
+                            <div class="stat">
+                                <h3 class="stat-number">1000+</h3>
+                                <p class="stat-sevice">Lorem, ipsum.
+                                </p>
+                            </div>
+                            <div class="stat">
+                                <h3 class="stat-number">1000+</h3>
+                                <p class="stat-sevice">Lorem, ipsum.
+                                </p>
+                            </div>
+                            <div class="stat">
+                                <h3 class="stat-number">1000+</h3>
+                                <p class="stat-sevice">Lorem, ipsum.
+                                </p>
+                            </div>
+                            <div class="stat">
+                                <h3 class="stat-number">1000+</h3>
+                                <p class="stat-sevice">Lorem, ipsum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <p class="subtitle-p">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+        <section class="partners" id="partners">
+            <div class="outer-wrapper">
 
-    <form class="sub-form">
-      <div class="sub-box">
+                <header class=" partenrs-header">
+                    <h2 class="hero-title services-title partenrs-title">Our Partners</h2>
+                    <p class="services-subtitle partenrs-subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, soluta cupiditate quae illum vel ducimus iusto ipsa? Blanditiis.</p>
+                </header>
+                <div class="partner-container">
+                    <div class="partner-row">
+                        <div class="partner">
+                            <i class="fab fa-angellist" class="partner-icon"></i>
+                            <h6>Angellist</h6>
+                        </div>
+                        <div class="partner">
+                            <i class="fab fa-opencart" class="partner-icon"></i>
+                            <h6>opencart</h6>
+                        </div>
+                        <div class="partner">
+                            <i class="fab fa-lastfm" class="partner-icon"></i>
+                            <h6>lastfm</h6>
+                        </div>
+                    </div>
+                    <div class="partner-row">
+                        <div class="partner">
+                            <i class="fab fa-openid" class="partner-icon"></i>
+                            <h6>openid</h6>
+                        </div>
+                        <div class="partner">
+                            <i class="fab fa-skyatlas" class="partner-icon"></i>
+                            <h6>skyatlas</h6>
+                        </div>
+                        <div class="partner">
+                            <i class="fab fa-ravelry" class="partner-icon"></i>
+                            <h6>ravelry</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <input type="email" placeholder="Enter your email.." required>
-      <button type="submit" name="button">Subscribe</button>
+        <!-- Communication Section -->
+        <section id="comm">
+            <div class="comm-container">
+        
+                <div class="icon">
+                    <span class="fa fa-envelope"></span>
+                </div>
+            
+                <h2>Stay Updated!</h2>
+            
+                <p class="subtitle-p">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+            
+                <form class="sub-form">
+                    <div class="sub-box">
+                        <input type="email" placeholder="Enter your email.." required>
+                        <button type="submit" name="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+      </section>
+        <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+            <div class="social-icons">
+                <ul>
+                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                    <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+                </ul>
+            </div>
+            <p>&copy; 2019 Startup. All Rights Reserved</p>
 
-      </div>
-
-    </form>
-    </div>
-  </section>
-    <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-container">
-
-    <div class="social-icons">
-      <ul>
-        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-        <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-        <li><a href="#"><span class="fa fa-instagram"></span></a></li>
-      </ul>
-      </div>
-      <p>&copy; 2019 Startup. All Rights Reserved</p>
-
-      <div class="top">
-        <a href="#hero"><span class="fa fa-level-up"></span></a>
-      </div>
-    </div>
-
-  </footer>
-  </body>
+            <div class="top">
+                <a href="#hero"><span class="fa fa-level-up"></span></a>
+            </div>
+        </div>
+    
+      </footer>
+    </body>
 </html>
+
