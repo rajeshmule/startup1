@@ -413,6 +413,9 @@ h6 {
     display: block;
     position: absolute;
 }
+.current-link {
+  color: var(--green);
+}
 .search-container {
     flex-grow: 0;
     display: flex;
