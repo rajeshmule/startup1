@@ -739,6 +739,15 @@ h6 {
 
 /* Pricing */
 
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+
+}
+.clearfix:after {
+  clear: both;
+}
+
 .wrapper1 {
   width: 90%;
   margin: 0 auto;
@@ -746,10 +755,11 @@ h6 {
 
 .price-container {
   width: 100%;
-  height: 700px;
+  /* height: 700px; */
   /* margin-top: 140px; */
   background: #fff;
   text-align: center;
+  padding-bottom: 80px;
   /* margin-left: 40px; */
 }
 
@@ -766,7 +776,6 @@ margin: 3rem 0 2rem 0;
 hr {
 width: 80%; 
 }
-
 
 .rounded-circle {
   border-radius: 50%;
@@ -793,6 +802,7 @@ width: 80%;
   margin-left: 60px;
   position: relative;
   background-color: #ffffff;
+  margin-bottom: 80px;
 }
 
 .shadow {
