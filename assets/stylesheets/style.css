@@ -688,103 +688,144 @@ h6 {
     }
 }
 
-/* 404 By Kennedy*/
+/* 404 Error-Page*/
 
 .error-page {
-    text-align: center;
-    width: 100%;
-    height: 700px;
-    background: whitesmoke;
-    padding: 10px;
+  text-align: center;
+  width: 100%;
+  height: 800px;
+  background: #fff;
+  padding: 10px;
 }
 
 .home {
-    margin-top: 10%;
-    margin-bottom: 40px;
+  /* margin-top: 10%; */
+  margin-bottom: 140px;
 }
 
 .home-page {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  /* color: black; */
 }
 
 .heading {
-    font-size: 40px;
+  font-size: 40px;
 }
 
-.para {
-    font-size: 20px;
-    line-height: 30px;
-    color: lightslategray;
+.subtitle-p {
+  color: #51585f;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.9;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 2rem;
+
 }
 
 .back-btn {
-    width: 150px;
-    height: 50px;
-    border: 1px solid black;
-    display: inline-block;
-}
-
-.button-text
-{
-    color: black;
-    box-sizing: border-box;
-    text-decoration: none;
+  width: 180px;
+  height: 53px;
+  padding: 5px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif; 
+  margin-top: 1.5rem;
 }
 
 
 
+/* Pricing */
 
-/* Pricing Page By Kennedy */
+.wrapper1 {
+  width: 90%;
+  margin: 0 auto;
+} 
 
-
-.container {
-    width: 100%;
-    height: 700px;
-    margin-top: 70px;
-    background: whitesmoke;
-    text-align: center;
+.price-container {
+  width: 100%;
+  height: 700px;
+  /* margin-top: 140px; */
+  background: #fff;
+  text-align: center;
+  /* margin-left: 40px; */
 }
 
-.home-page-pricing {
-    color: black;
-    text-decoration: none;
+
+.stan {
+margin: 3rem 0 2rem 0;
 }
 
-.circle {
-    border-radius: 50px;
-    width: 90px;
-    height: 90px;
-    background: #705ecf;
-    font-size: 30px;
-    line-height: 2.9;
+.home-page-pricing { 
+  color: black;
+  text-decoration: none;
+}
+
+hr {
+width: 80%; 
+}
+
+
+.rounded-circle {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  background: #705ecf;
+  font-size: 30px;
+  line-height: 2.9;
+  margin-left: 80px;
+  top: -60px;
+  position: absolute;
+  color: #ffffff;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; 
 }
 
 
 .box {
-    width: 280px;
-    height: 400px;
-    outline: 1px solid black;
-    float: left;
-    text-align: center;
-    margin-left: 60px;
+  width: 260px;
+  /* height: 420px; */
+  outline: 1px solid #ddd;
+  float: left;
+  text-align: center;
+  margin-left: 60px;
+  position: relative;
+  background-color: #ffffff;
 }
 
+.shadow {
+  box-shadow: 1px 2px 16px 2px #d8d8d8;
+}
+
+.shadow-hover:hover {
+  box-shadow: 1px 2px 16px 2px #d8d8d8;
+}
+
+.box1 {
+  margin-left: 30px;
+}
+
+/* .box:hover {
+  box-shadow: 4px 7px;
+} */
+ 
 .boxtext {
-    color: lightslategray;
-    font-size: 20px;
-    padding: 10px;
-    line-height: 40px;
-    list-style-type: none;
-
-}
-/* Need to change this class name */
-.damn-btn {
-    width: 200px;
-    height: 80px;
-    border: 1px solid black;
+  color: lightslategray;
+  font-size: 20px;
+  padding: 17px;
+  line-height: 40px;
+  list-style-type: none;
+  font-family: 'Poppins', sans-serif;
 }
 
+
+.purchase-btn {
+  width: 140px;
+  height: 50px;
+  padding: 5px;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif; 
+  margin: 1rem 0;
+}
 /*About us*/
 
 
