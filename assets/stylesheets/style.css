@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700');
   /* Common */
 
 * {
@@ -19,7 +19,7 @@ html {
 
 h2 {
   font-size: 2.375rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
 }
 p {
@@ -37,10 +37,12 @@ p {
   font-weight: 400;
   line-height: 1.5;
   vertical-align: middle;
+  font-size: 14px;
 }
 
 .btn:hover {
   opacity: 0.8;
+  cursor: pointer;
 }
 /* needs to change class name */
 .damn-span {
@@ -421,7 +423,7 @@ h6 {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 1vw;
+    padding: 1rem;
     box-shadow: 0 0 1.5rem rgba(87, 87, 87, .1);
 }
 /* Logo */
@@ -474,6 +476,7 @@ h6 {
     padding: 1rem 1.5rem 1rem 1rem;
     border-radius: .6rem;
     top: 100%;
+    z-index: 666;
 }
 .dropdown-item {
     padding-bottom: .7rem;
@@ -496,7 +499,7 @@ h6 {
     display: flex;
 }
 .search-form {
-    min-width: 300px;
+    /* min-width: 300px; */
     display: flex;
 }
 .search {
@@ -536,8 +539,9 @@ h6 {
     align-self: center;
 }
 .hero-title {
+  font-size: 4rem;
     font-weight: 600;
-    line-height: 1.3;
+    line-height: 1.2;
 }
 .green-text {
     color: var(--green);
@@ -723,7 +727,7 @@ h6 {
         text-align: center;;
         background: var(--white);
         color: #000000;
-        padding: .25rem .7rem;
+        padding: .5rem .7rem;
         border-radius: .3rem;
         border: 1px solid;
         max-width: 70px;
@@ -743,15 +747,15 @@ h6 {
         color: #000000;
     }
     .menu {
-        width: 130px;
         display: flex;
         flex-direction: column;
+        align-items: flex-end;
     }
     .toggle-menu:checked ~.nav-list {
         display: flex;
         position: relative;
         flex-direction: column;
-        right: 35vw;
+        right: 40vw;
     }
     .toggle-drop:checked ~.dropdown-list {
         display: flex;
@@ -771,9 +775,9 @@ h6 {
 .error-page {
   text-align: center;
   width: 100%;
-  height: 800px;
+  /* height: 800px; */
   background: #fff;
-  padding: 10px;
+  padding: 30px;
 }
 
 .home {
@@ -826,6 +830,7 @@ h6 {
   display: inline-block;
 }
 
+
 .wrapper1 {
   width: 90%;
   margin: 0 auto;
@@ -838,7 +843,6 @@ h6 {
   background: #fff;
   text-align: center;
   padding-bottom: 80px;
-  /* margin-left: 40px; */
 }
 
 
@@ -1038,9 +1042,7 @@ color: #00a3e2;
 }
 .team {
 	text-align: center;
-	
   padding-bottom: 5rem;
-
 }
 .team_para {
 	line-height: 1.7;
