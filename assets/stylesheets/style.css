@@ -1211,6 +1211,10 @@ input[type=checkbox] ~ label {
     display: block;
     height: 18rem;
   }
+  .team {
+    height: auto;
+  }
+  
 
   .team_members {
     display: flex;
