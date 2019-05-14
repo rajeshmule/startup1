@@ -916,7 +916,10 @@ width: 80%;
 }
 /*About us*/
 
-
+.marginpara {
+  margin: 1.5rem 0 2rem 0;
+}
+ 
 .banner{
 	display:flex;
 	justify-content: center;
@@ -1027,6 +1030,7 @@ color: #00a3e2;
 }
 
 /*team*/
+
 .team_bg {
 	background-color: #F8F9FA;
 }
@@ -1172,3 +1176,64 @@ input[type=checkbox] ~ label {
 #check_3:checked ~ .fc3{
 	display: block;
 }
+
+@media all and (max-width:500px) {
+
+  html {
+    font-size: 14px;
+  }
+  /* for auout us */
+  .wrapper {
+    width: 92%;
+    margin: 0 auto;
+  }
+  .banner {
+    padding: 2rem 0;
+  }
+
+  .benefits {
+    
+    display: flex;
+    flex-direction: column;
+  }
+  .benefits_items {
+  margin-bottom: 2rem;  
+  }
+  
+
+  .hero , .faq_hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about , .faq {
+    width: 100%;
+    display: block;
+    height: 18rem;
+  }
+
+  .team_members {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .team_member {
+    
+  
+    margin-bottom: 2rem; 
+  }
+
+  .team_para {
+    padding: 1rem 1rem ; 
+  }
+
+ 
+ /*for faq */
+
+ .faq_heading {
+  padding-top: 4rem;
+ }
+  
+  
+}  
